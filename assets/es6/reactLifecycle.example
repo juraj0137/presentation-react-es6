@@ -1,0 +1,15 @@
+export default class Counter extends React.Component {
+
+    componentWillMount() {
+        // zavola sa iba raz, pred prvym renderom komponenty
+    }
+
+    render() {
+        // renderovanie komponenty
+    }
+
+    componentDidMount() {
+        // zavola sa iba raz, po prvom renderi komponenty
+    }
+
+}

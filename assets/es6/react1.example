@@ -1,0 +1,11 @@
+import React from "react";
+
+export default class MojaKomponenta extends React.Component {
+
+    render() {
+        return (
+            <h1>Ahoj, ja som react komponenta</h1>
+        );
+    }
+
+}

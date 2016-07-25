@@ -1,0 +1,15 @@
+export default class Counter extends React.Component {
+
+    shouldComponentUpdate(nextProps, nextState) {
+        return true / false;
+    }
+
+    componentWillUpdate(nextProps, nextState) {
+    }
+
+    render() {
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+    }
+}

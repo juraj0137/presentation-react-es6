@@ -1,0 +1,6 @@
+function Programmer(name, lang) {
+    Person.call(this, name);
+    this.lang = lang;
+}
+
+extend(Programmer, Person);

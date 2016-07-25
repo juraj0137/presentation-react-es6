@@ -1,0 +1,12 @@
+export default class MojaKomponenta extends React.Component {
+
+    render() {
+        return (
+            <h1>Ahoj, ja som {this.props.name}</h1>
+        );
+    }
+
+}
+
+
+<MojaKomponenta name="Fero" />

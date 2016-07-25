@@ -1,0 +1,7 @@
+let foo = "foo";
+
+if(true){
+    let foo = "kvak";
+    console.log(foo);
+}
+console.log(foo);

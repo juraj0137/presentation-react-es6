@@ -1,0 +1,19 @@
+export default class Counter extends React.Component {
+    constructor(){
+        super(arguments);                       //parent constructor
+        this.state = { count: 0 };              //initial state
+        this.onClick = this.onClick.bind(this);
+    }
+
+    onClick() {
+        this.setState({count: this.state.count + 1}) // set a new state
+    }
+
+    render() {
+        return (
+            <h1 onClick={this.onClick}> {/* call onClick function */}
+                Pocet klikov je {this.state.count} {/* state value */}
+            </h1>
+        );
+    }
+}

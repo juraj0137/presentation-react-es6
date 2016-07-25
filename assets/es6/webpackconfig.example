@@ -1,0 +1,24 @@
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+var plugins = [
+    new ExtractTextPlugin("bundle.css", {allChunks: true})
+]
+
+module.exports = {
+    entry: './assets/compose.js',
+    output: {
+        filename: 'bundle.js',
+        path: './assets/build/'
+    },
+    module: {
+        loaders: [
+            { test: /\.jsx?$/, loader: 'babel?presets[]=react&presets[]=es2015&compact=false' },
+            { test: /\.styl$/, loader: ExtractTextPlugin.extract("stylus", "css-loader?sourceMap!stylus-loader?sourceMap") },
+            { test: /\.less$/, loader: ExtractTextPlugin.extract("less-loader","css-loader?sourceMap!less-loader?sourceMap") },
+            { test: /\.css$/,  loader: ExtractTextPlugin.extract("css-loader","css-loader?sourceMap") },
+            { test: /\.(gif|jpg|png|woff|woff2|eot|ttf|svg)$/,  loader: 'url-loader?limit=500'}
+        ]
+    },
+    devtool: "#inline-source-map",
+    plugins: plugins
+};

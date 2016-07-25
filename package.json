@@ -7,7 +7,7 @@
     "clean:lib": "rimraf lib",
     "clean:dist": "rimraf dist",
     "build:lib": "babel src -d lib --copy-files",
-    "build:dist": "NODE_ENV=production webpack --config webpack.config.production.js",
+    "build:dist": "webpack --config webpack.config.production.js",
     "lint": "eslint --ext .js,.jsx src",
     "deploy": "npm run build:dist && surge -p .",
     "start": "node server.js"
@@ -16,6 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "history": "^2.1.1",
+    "jquery": "^2.2.4",
     "lodash": "3.10.1",
     "mdast": "^2.1.0",
     "mdast-react": "git://github.com/jjt/mdast-react.git#2ea3bcd",

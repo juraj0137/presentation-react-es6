@@ -1,0 +1,15 @@
+class Config {
+
+    get version(){
+        return this._version
+    }
+
+    set version(version){
+        this._version = version;
+    }
+
+}
+
+let config = new Config();
+config.version = 19;
+console.log(config.version); // 19

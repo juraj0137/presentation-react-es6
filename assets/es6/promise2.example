@@ -1,0 +1,9 @@
+Promise.all([
+    ajaxCall({/* params_1 */}),
+    ajaxCall({/* params_2 */}),
+    ajaxCall({/* params_3 */})
+]).then(results => {
+    console.log(result[0])
+    console.log(result[1])
+    console.log(result[2])
+})

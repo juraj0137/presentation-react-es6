@@ -1,0 +1,17 @@
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+
+    greet() {
+        console.log(`Hello world, I'm ${this.name}`)
+    }
+
+    static foo() {
+    }
+}
+
+Person.foo();
+
+let Fero = new Person("Fero");
+fero.greet();

@@ -1,0 +1,12 @@
+let car = {
+    color: "black",
+    type: "SUV",
+    price: 16599
+};
+
+let {color, type, price} = car;
+
+
+
+console.log(`${color} ${type}, price: ${price}`);
+//black SUV, price: 16599

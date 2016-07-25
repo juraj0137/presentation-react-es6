@@ -1,0 +1,16 @@
+class Programmer extends Person {
+    constructor(name, lang) {
+        super(name);
+        this.lang = lang;
+    }
+
+    greet() {
+        super.greet();
+        console.log(`I know ${this.lang}`);
+    }
+
+}
+
+let Fero = new Programmer("Fero", "Javascript");
+fero.greet();
+

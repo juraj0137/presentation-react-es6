@@ -1,0 +1,12 @@
+<div id="react-view"></div>
+
+
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import MojaKomponenta from './src/MojaKomponenta.js';
+
+ReactDOM.render(
+    <MojaKomponenta/>,
+    document.getElementById('react-view')
+);

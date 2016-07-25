@@ -1,0 +1,12 @@
+function add(a, b){
+    if(typeof a === "undefined"){
+        a = 1;
+    }
+    if(typeof b === "undefined"){
+        b = 2;
+    }
+    return a + b;
+}
+
+add();
+add(0, 1);

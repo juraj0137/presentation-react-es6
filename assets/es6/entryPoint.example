@@ -1,0 +1,16 @@
+import 'rs-tracker';
+...
+ 
+import 'rs-css-base'; 
+import 'rs-css-base-layout'; 
+...
+
+import MojaApp from './assets/js/MojaApp.js';
+
+window.Projekt = window.Projekt || {};
+window.Projekt.MojaApp = MojaApp;
+
+//HTML
+<script>
+    var app = new MojaApp();
+</script>

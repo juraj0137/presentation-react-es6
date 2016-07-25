@@ -1,0 +1,7 @@
+const PI = 3.14;
+PI = 19; // Error !
+const PI = 19; // Error !
+
+const obj = {};
+obj = {"foo": 1}; // Error !a
+obj.foo = 1; // OK

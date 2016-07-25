@@ -1,0 +1,11 @@
+function Person(name) {
+    this.name = name;
+}
+
+Person.prototype.greet = function() {
+    console.log("Hello world, I'm " + this.name);
+}
+
+var fero = new Person("Fero");
+fero.greet();
+

@@ -1,0 +1,15 @@
+var jozef = {
+    
+    name: "Jozef",
+    
+    sayHello: function(){
+
+
+
+        setTimeout(() => {
+            console.log("Hi "+this.name)
+        },1000);
+    }
+}
+
+jozef.sayHello(); // Hi Jozef
